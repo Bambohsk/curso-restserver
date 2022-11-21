@@ -22,10 +22,10 @@ const usuariosGet = async(req = request, res = response) => {
             .limit(Number(limite))
     ]);
 
-    res.json({
+    res.json([
         total,
         usuarios
-    });
+    ]);
 }
 
 const usuariosPost = async (req, res = response) => {
